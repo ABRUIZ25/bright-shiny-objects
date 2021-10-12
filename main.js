@@ -23,28 +23,31 @@ return user
 }
 
 
-  function fixCar (vehicle , needsMaitenance){
-   let car = {
-        make: 'Ford',
-        model: 'Mustang',
-        year: 1969,
-        needsMaitenance: false,
-    };
-    return car
- }
+function fixCar(car) {
+car.needsMaitenance = false
+return car
+
+}
+
+function addGrades (newGrades, students){
+for (let i = 0; i < newGrades.length; i++){
+   const newGrades = newGrades [i]
+   students.grades.push(newGrades)
+}
+return students
+}
+
+function getDataType (object, key){
+return typeof object [key]
+
+}
 
 
- function addGrades (clas, grades ){
-    const student = {
-    name: 'Anthony DeRosa',
-    email: 'anthony.derosa@codeimmersives.com',
-    grades: [80, 100, 95]
-    }
-    grades.splice [88, 70, 90] = grades 
-    return student
- }
+function addTodo (todos, newTodo){
+   todos.push(newTodo)
+   return todos
+}
 
- 
 
 
 
